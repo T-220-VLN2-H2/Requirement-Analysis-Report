@@ -1,0 +1,44 @@
+% Skapalón frá Hlyni Arnórssyni
+% Physics Version 0.2 - 10.Jan 2020
+% ---------- Blaðsíðustillingar ---------- 
+\usepackage{geometry}
+
+\geometry{
+	paper=a4paper, % letterpaper lika til
+	top=2.5cm, % Top margin
+	bottom=1cm, % Bottom margin
+	left=2.5cm, % Left margin
+	right=2.4cm, % Right margin
+	headheight=0.75cm, % Header height
+	footskip=1.5cm, % Space from the bottom margin to the baseline of the footer
+	headsep=0.75cm, % Space from the top margin to the baseline of the header
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+% ---------- Íslenska ---------- 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[icelandic]{babel}
+
+% ---------- Stærðfræðipakkar frá AMS ---------- 
+
+% \usepackage{amsmath, amsfonts, amsthm, amssymb} % Stærðfræðipakkar
+
+% ---------- Listar/ númeringar ---------- 
+\usepackage{enumitem, multicol}
+
+% ---------- Fyrir innsetningu mynda ---------- 
+\usepackage{graphicx, float} 
+\usepackage{caption}
+\newcommand{\source}[1]{\caption*{Source: {#1}} }
+\graphicspath{ {./images/} }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Hyperlink References %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Code blocks %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings} %code extracts
+%\usepackage{xcolor} %custom colours
+\usepackage{mdframed} %nice frames
+\usepackage{pgffor} % for loops

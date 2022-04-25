@@ -11,12 +11,12 @@
 \begin{titlepage}
 	\centering
 	\includegraphics[width=0.3\textwidth]{ru-logo.eps}\par\vspace{1cm} %<-- RU Logo
-	{\scshape\LARGE Háskólinn í Reykjavík \par} %<-- Nafn háskólans (Háskólinn í Reykjavík / Reykjavik University)
+	{\scshape\LARGE Reykjavík University\par} %<-- Nafn háskólans (Háskólinn í Reykjavík / Reykjavik University)
 	\vspace{1cm}
 	{\scshape\Large Verklegt námskeið II\par} %<-- Áfanga titill / Class or course title
 	\vspace{1.5cm}
-	{\huge\bfseries Hönnunarskýrsla \par} %<-- Titill Skýrslu / Title of Report
-	{\Large\itshape  Hópur 2 \par}
+	{\huge\bfseries Requirement Analysis Report\par} %<-- Titill Skýrslu / Title of Report
+	{\Large\itshape  Group 2 \par}
 	\vspace{2cm}
 	{\Large\itshape Helgi Hákonarson}\par %<-- Nafn nemanda / Name of student
 	\texttt{helgihak20@ru.is}\par %<-- t-póstfang / e-mail
@@ -30,7 +30,7 @@
 	{\Large\itshape Sigurður Baldvin Friðriksson}\par %<-- Nafn nemanda / Name of student
 	\texttt{sigurdurf21@ru.is}\par %<-- t-póstfang / e-mail
 	\vfill
-	Kennari\par %<-- (Umsjón höfðu / supervised by)
+	Teacher\par %<-- (Umsjón höfðu / supervised by)
 	Arnar Leifsson%<-- Nafn kennara og aðstoðarkennara í tilraun / Name of Lab Teacher and TA
 	\vfill
 
@@ -44,13 +44,16 @@
 
 %% --- Titil síða endar / Title page ends --- %%
 
-\section{Inngangur}
+\include{Sections/introduction}
 
-\begin{section}{Notkunartilvik}
-\end{section}
+\include{Sections/requrements}
 
-\begin{section}{Útlit}
-\end{section}
+\include{Sections/usecases}
 
-\section{Samantekt} 
+\include{Sections/usergroups}
+
+\include{Sections/wireframes}
+
+\include{Sections/conclution}
+
 \end{document}

@@ -1,8 +1,15 @@
-\documentclass{scrartcl}
+%\documentclass{scrartcl}
+\documentclass{article}
 \input{File_Setup.tex}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{float}
 \usepackage{multicol, caption}
+ 
+% page numbering
+\pagestyle{plain}
+%
+
+
 %support for figures in multicol environment
 \newenvironment{Figure}
   {\par\medskip\noindent\minipage{\linewidth}}
@@ -63,6 +70,8 @@
 \include{Sections/benchmarking}
 
 \include{Sections/conclution}
+
+\include{Sections/appendix}
 
 \include{Sections/addendum}
 

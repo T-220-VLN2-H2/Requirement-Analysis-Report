@@ -1,1 +1,172 @@
-\section{Use cases / scenarios}
+\section{Use cases}
+
+\begin{tabular}{|l|l|}
+\hline
+Name            & Search item \\\hline
+Nr.             & 1 \\\hline
+Description     & User searches, filters and orders search \\\hline
+Priority        & A \\\hline
+Author          & Konráð \\\hline
+Source          & 2,3,4 (in requirements) \\\hline
+Actors          & Buyer \\\hline
+Precondition    & The customer has a user on the site and is logged in. Site has active listings \\\hline
+Postcondition   & \\\hline
+Main Succsess Senario & \begin{tabular}[c]{@{}l@{}}
+        1. User types in given keywords\\
+        2. User filters result  by given constraints\\
+        3. User orders search result by ...\\
+        4. User opens product listing
+        \end{tabular} \\\hline
+Extensions      & \begin{tabular}[c]{@{}l@{}}
+        1a) User is not logged in and should login. \\
+        1b) Connection to db refused, try again later. \\
+        1c) No listings returned from search, alter keywords
+        \end{tabular}\\\hline
+\end{tabular}\\\\
+
+\noindent
+\begin{tabular}{|l|l|}
+\hline
+Name            & Send offer \\\hline
+Nr.             & 2 \\\hline
+Description     & Buyer selects item, looks at seller rating and sends offer \\\hline
+Priority        & A \\\hline
+Author          & Konráð \\\hline
+Source          & 12 (in requirements) \\\hline
+Actors          & Buyer \\\hline
+Precondition    & The customer has a user on the site and is logged in. Site has active listing \\\hline
+Postcondition   & Seller gets new offer \\\hline
+Main Succsess Senario & \begin{tabular}[c]{@{}l@{}}
+        1. User selects listing \\
+        2. User reads listing info \\
+        3. User looks at seller rating \\
+        4. User sends offer\end{tabular} \\\hline
+Extensions      & \begin{tabular}[c]{@{}l@{}}
+        1a) User is not logged in and should login. \\
+        1b) Connection to db refused, try again later. \\
+        1c) Users computer halts and catches fire, user should probably put out said fire.\end{tabular}\\\hline
+\end{tabular}\\\\
+
+\noindent
+\begin{tabular}{|l|l|}
+\hline
+Name & Selling \\\hline
+Nr. & 3 \\\hline
+Description & User adds new listing with pictures and text. \\\hline
+Priority & A \\\hline
+Author & Konráð \\\hline
+Source & 11 (in requirements) \\\hline
+Actors & Seller \\\hline
+Precondition & The customer has a user on the site and is logged in. \\\hline
+Postcondition & Site has new listing \\\hline
+Main Succsess Senario & \begin{tabular}[c]{@{}l@{}}
+        1. User clicks on add listing\\
+        2. User adds title to listing\\
+        3. User adds description\\
+        4. User adds photo\\
+        5. User posts listing\end{tabular}\\\hline
+Extensions & \begin{tabular}[c]{@{}l@{}}
+        1a) User is not logged in and should login.\\
+        1b) Connection to db refused, try again later.\\
+        1c) User has no item to sell\\
+        4a) User has no photos and should take some before posting\\
+        5a) User has no item to sell\end{tabular}\\\hline
+\end{tabular}\\\\
+
+\noindent
+\begin{tabular}{|l|l|}
+\hline
+Name & Rate seller \\\hline
+Nr. & 4 \\\hline
+Description & Buyer rates the seller after purchase. \\\hline
+Priority & B \\\hline
+Author & Patrekur \\\hline
+Source & 14 (in requirements) \\\hline
+Actors & Buyer \\\hline
+Precondition & Buyer has purchased and received item. \\\hline
+Postcondition & Sellers average rating changes \\\hline
+Main Succsess Senario & \begin{tabular}[c]{@{}l@{}}
+        1. Buyer clicks on his profile\\  
+        2. Buyer selects purchase history\\
+        3. Buyer selects a purchase\\
+        4. Buyer clicks on 'rate this sale'\\
+        5. Buyer selects seller rating\\
+        6. Buyer confirms selection\\
+        7. System confirms rating and updates seller average rating\end{tabular} \\\hline
+Extensions & \begin{tabular}[c]{@{}l@{}}
+        3a) Purchase history is empty, buyer has not finalized payment\\
+        6a) Buyer has not selected rating, system prompts input error\end{tabular}\\\hline
+\end{tabular}\\\\
+
+\noindent
+\begin{tabular}{|l|l|}
+\hline
+Name & Edit profile \\\hline
+Nr. & 5\\\hline
+Description & User edits own profile, adding picture and changing display name \\\hline
+Priority & A \\\hline
+Author & Konráð \\\hline
+Source & 7 (in requirements)\\\hline
+Actors & General user\\\hline
+Precondition & The customer has a user is logged in. \\\hline
+Postcondition & Profile picture and display name changed \\\hline
+Main Succsess Senario & \begin{tabular}[c]{@{}l@{}}
+        1. User opens own profile\\
+        2. User clicks on 'Edit Profile'\\
+        3. Adds picutre\\
+        4. Changes user name\\
+        5. Clicks Save\end{tabular}\\\hline
+Extensions & \begin{tabular}[c]{@{}l@{}}
+        a) User is not logged in and should login.\\
+        b) Connection to db refused, try again later.\\
+        c) User has no photos and should take one before editing profile\end{tabular}\\\hline
+\end{tabular}\\\\
+
+\noindent
+\begin{tabular}{|l|l|}
+\hline
+Name & Respond to offer \\\hline
+Nr. & 6\\\hline
+Description & Seller responds to offer on his item.\\\hline
+Priority & A \\\hline
+Author & Patrekur \\\hline
+Source & 13 (in requirements)\\\hline
+Actors & Seller \\\hline
+Precondition & Seller has an active sale and received an offer \\\hline
+Postcondition & Buyer/s receives offer response notification \\\hline
+Main Succsess Senario & \begin{tabular}[c]{@{}l@{}}
+        1. Seller clicks on his profile\\  
+        2. Seller selects 'Active sales'\\
+        3. Seller selects a sale\\
+        4. Seller clicks on 'respond'\\
+        5. Seller  chooses offer response\\
+        6. System sends notifications to buyer/s\end{tabular} \\\hline
+Extensions & \\\hline
+\end{tabular}\\\\
+
+\noindent
+\begin{tabular}{|l|l|}
+\hline
+Name & Checkout item \\\hline
+Nr. & 7 \\\hline
+Description & Buyer pays for item to finalize sale \\\hline
+Priority & A \\\hline
+Author & Patrekur \\\hline
+Source & 29 (in requirements) \\\hline
+Actors & Buyer \\\hline
+Precondition & Seller has accepted the buyers offer \\\hline
+Postcondition & Sale is finalized, item is removed from available items \\\hline
+Main Succsess Senario & \begin{tabular}[c]{@{}l@{}}
+        1. Buyer clicks on his profile\\
+        2. Buyer selects active offers\\
+        3. Buyer selects an offer\\
+        4. Buyer clicks on checkout\\
+        5. Buyer inputs contact information\\
+        6. Buyer inputs payment information\\
+        7. Buyer confirms information\\
+        8. System validates information and funds\\
+        9. System displays success and sale information review\end{tabular} \\\hline
+Extensions          & \begin{tabular}[c]{@{}l@{}}
+        7a) Buyer input wrong information, system displays incorrect information error\\
+        7b) Buyer has insufficient funds, system displays insufficient funds error\end{tabular}\\\hline
+\end{tabular}

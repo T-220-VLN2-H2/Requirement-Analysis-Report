@@ -1,14 +1,18 @@
-%\documentclass{scrartcl}
-\documentclass{article}
+\documentclass{scrartcl}
 \input{File_Setup.tex}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{float}
 \usepackage{multicol, caption}
  
 % page numbering
-\pagestyle{plain}
-%
+% \pagestyle{plain}
+\usepackage{fancyhdr}
 
+\pagestyle{fancy}
+\fancyhf{} % clears default style
+\rhead{Group 2}
+\lhead{T-220-VLN2 Requirement Analysis Report}
+\cfoot{\thepage}
 
 %support for figures in multicol environment
 \newenvironment{Figure}
@@ -65,14 +69,16 @@
 
 \include{Sections/usergroups}
 
-\include{Sections/wireframes}
-
 \include{Sections/benchmarking}
 
-\include{Sections/conclution}
+\include{Sections/wireframes}
 
-\include{Sections/appendix}
+\include{Sections/usability-tests}
 
-\include{Sections/addendum}
+\include{Sections/conclusion}
+
+%\include{Sections/appendix}
+
+%\include{Sections/addendum}
 
 \end{document}
